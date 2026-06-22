@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAISON CLARA — Hogar & Decoración</title>
+<meta name="description" content="Objetos para el hogar que trascienden las tendencias. Diseño europeo, espíritu artesanal. Envío gratuito a partir de 80 €.">
+<meta name="keywords" content="decoración hogar, lámpara ratán, jarrón cerámica, espejo LED, velas soja, iluminación ambiente, hogar minimalista, decoración española">
+<meta name="author" content="MAISON CLARA">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://TUNOMBRE.github.io/maison-clara/">
+<meta property="og:title" content="MAISON CLARA — Hogar & Decoración">
+<meta property="og:description" content="El arte de vivir con calma. Piezas cuidadas para espacios que inspiran.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MAISON CLARA — Hogar & Decoración">
+<meta name="twitter:description" content="El arte de vivir con calma. Piezas cuidadas para espacios que inspiran.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://TUNOMBRE.github.io/maison-clara/">
+
+<!-- Favicon inline SVG -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%238B6F47'/><text y='.9em' font-size='80' x='10'>M</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #FAFAF8;
+    --sand: #F0EBE1;
+    --sand-dark: #E2D9CC;
+    --charcoal: #2C2C28;
+    --charcoal-light: #5A5A54;
+    --earth: #8B6F47;
+    --earth-light: #A88660;
+    --texture: #D4CFC8;
+    --white: #FFFFFF;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    background: transparent;
+    transition: background 0.4s, padding 0.4s;
+  }
+  nav.scrolled {
+    background: rgba(250, 250, 248, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 16px 48px;
+    border-bottom: 1px solid var(--sand-dark);
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.4s;
+  }
+  nav.scrolled .nav-logo { color: var(--charcoal); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255,255,255,0.85);
+    transition: color 0.3s;
+  }
+  nav.scrolled .nav-links a { color: var(--charcoal-light); }
+  .nav-links a:hover { color: var(--earth); }
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .nav-icon {
+    cursor: pointer;
+    color: rgba(255,255,255,0.85);
+    transition: color 0.3s;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+  }
+  nav.scrolled .nav-icon { color: var(--charcoal-light); }
+  .nav-icon:hover { color: var(--earth); }
+  .cart-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .cart-count {
+    background: var(--earth);
+    color: white;
+    font-size: 10px;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 80px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgba(30,28,24,0.65) 0%, rgba(30,28,24,0.2) 50%, transparent 100%),
+      url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&q=80') center/cover no-repeat;
+  }
+  .hero-content {
+    position: relative;
+    max-width: 600px;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 7vw, 88px);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 28px;
+  }
+  .hero-title em {
+    font-style: italic;
+    font-weight: 300;
+  }
+  .hero-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.72);
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+    max-width: 380px;
+  }
+  .btn-primary {
+    display: inline-block;
+    padding: 14px 36px;
+    background: var(--earth);
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .btn-primary:hover { background: var(--earth-light); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-block;
+    padding: 13px 36px;
+    background: transparent;
+    color: var(--charcoal);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--charcoal);
+    transition: background 0.3s, color 0.3s;
+  }
+  .btn-outline:hover { background: var(--charcoal); color: var(--white); }
+
+  /* ── GITHUB PAGES NOTICE ── */
+  .gh-notice {
+    background: #1a1a1a;
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .gh-notice a {
+    color: var(--earth-light);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(168,134,96,0.4);
+    transition: border-color 0.2s;
+  }
+  .gh-notice a:hover { border-color: var(--earth-light); }
+
+  /* ── SHOPIFY FLOAT BUTTON ── */
+  .shopify-fab {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    z-index: 300;
+    background: var(--earth);
+    color: white;
+    padding: 14px 22px;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: 0 8px 32px rgba(139,111,71,0.35);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    font-family: var(--sans);
+    font-weight: 400;
+  }
+  .shopify-fab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(139,111,71,0.45);
+    background: var(--earth-light);
+  }
+  .shopify-fab svg { width: 16px; height: 16px; flex-shrink: 0; }
+  @media (max-width: 640px) {
+    .shopify-fab { bottom: 16px; right: 16px; padding: 12px 16px; font-size: 10px; }
+  }
+
+  /* ── ANNOUNCEMENT BAR ── */
+  .announce {
+    background: var(--charcoal);
+    color: var(--texture);
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 100px 80px; }
+  .section-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--earth);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+  }
+  .section-title em { font-style: italic; }
+  .section-sub {
+    font-size: 14px;
+    color: var(--charcoal-light);
+    max-width: 500px;
+    margin-bottom: 56px;
+  }
+
+  /* ── COLLECTIONS GRID ── */
+  .collections { background: var(--sand); }
+  .collections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px 220px;
+    gap: 16px;
+  }
+  .col-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .col-item:first-child {
+    grid-row: 1 / 3;
+  }
+  .col-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .col-item:hover .col-img { transform: scale(1.04); }
+  .col-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(30,28,24,0.55) 0%, transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+  }
+  .col-label {
+    color: var(--white);
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+  .col-label span {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 6px;
+  }
+
+  /* ── PRODUCTS ── */
+  .products-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 56px;
+  }
+  .products-note {
+    background: var(--sand);
+    border-left: 3px solid var(--earth);
+    padding: 14px 20px;
+    font-size: 12px;
+    color: var(--charcoal-light);
+    letter-spacing: 0.04em;
+    margin-top: 32px;
+  }
+  .product-card {
+    cursor: pointer;
+  }
+  .product-img-wrap {
+    position: relative;
+    overflow: hidden;
+    background: var(--sand);
+    aspect-ratio: 3/4;
+    margin-bottom: 18px;
+  }
+  .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .product-card:hover .product-img { transform: scale(1.05); }
+  .product-badge {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  .product-badge.sale { background: var(--earth); }
+  .product-actions {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(250,250,248,0.96);
+    padding: 14px;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    display: flex;
+    gap: 8px;
+  }
+  .product-card:hover .product-actions { transform: translateY(0); }
+  .product-actions button {
+    flex: 1;
+    padding: 10px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-add {
+    background: var(--charcoal);
+    color: var(--white);
+  }
+  .btn-add:hover { background: var(--earth); }
+  .btn-wish {
+    background: transparent;
+    color: var(--charcoal);
+    border: 1px solid var(--texture) !important;
+  }
+  .product-brand {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--earth);
+    margin-bottom: 4px;
+  }
+  .product-name {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+  .product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--charcoal);
+  }
+  .price-old {
+    color: var(--texture);
+    text-decoration: line-through;
+    font-size: 13px;
+  }
+  .price-new { color: var(--earth); font-weight: 500; }
+
+  /* ── BANNER SPLIT ── */
+  .banner-split {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+  }
+  .banner-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .banner-content {
+    background: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+  }
+  .banner-content .section-eyebrow { color: var(--earth-light); }
+  .banner-content .section-title { color: var(--white); }
+  .banner-content .section-sub { color: rgba(255,255,255,0.55); margin-bottom: 40px; }
+
+  /* ── VALORES ── */
+  .values { background: var(--sand); }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .value-item {}
+  .value-num {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--sand-dark);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .value-title {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+  }
+  .value-text {
+    font-size: 13px;
+    color: var(--charcoal-light);
+    line-height: 1.75;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials .section-title { margin: 0 auto 48px; }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: left;
+  }
+  .testi-card {
+    background: var(--sand);
+    padding: 36px;
+  }
+  .stars {
+    color: var(--earth);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+  .testi-text {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--charcoal);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .testi-author {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--charcoal-light);
+  }
+
+  /* ── NEWSLETTER ── */
+  .newsletter {
+    background: var(--charcoal);
+    text-align: center;
+    padding: 80px;
+  }
+  .newsletter .section-title { color: var(--white); margin: 0 auto 12px; }
+  .newsletter .section-sub { color: rgba(255,255,255,0.45); margin: 0 auto 40px; text-align: center; }
+  .newsletter-form {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .newsletter-input {
+    flex: 1;
+    padding: 14px 20px;
+    font-family: var(--sans);
+    font-size: 13px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-right: none;
+    color: var(--white);
+    outline: none;
+    letter-spacing: 0.04em;
+  }
+  .newsletter-input::placeholder { color: rgba(255,255,255,0.3); }
+  .newsletter-input:focus { border-color: var(--earth); }
+  .newsletter-submit {
+    padding: 14px 28px;
+    background: var(--earth);
+    color: var(--white);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .newsletter-submit:hover { background: var(--earth-light); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1E1C18;
+    color: rgba(255,255,255,0.45);
+    padding: 72px 80px 40px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .footer-tagline {
+    font-size: 12px;
+    line-height: 1.75;
+    max-width: 260px;
+    margin-bottom: 28px;
+  }
+  .footer-social {
+    display: flex;
+    gap: 16px;
+  }
+  .footer-social a {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-social a:hover { color: var(--earth-light); }
+  .footer-heading {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links a {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: rgba(255,255,255,0.75); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgba(255,255,255,0.22);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── CART DRAWER ── */
+  .cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(30,28,24,0.5);
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .cart-overlay.open { opacity: 1; pointer-events: all; }
+  .cart-drawer {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 400px;
+    background: var(--cream);
+    z-index: 201;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .cart-overlay.open .cart-drawer { transform: translateX(0); }
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .cart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .cart-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--charcoal-light);
+    line-height: 1;
+  }
+  .cart-items { flex: 1; overflow-y: auto; }
+  .cart-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--sand-dark);
+  }
+  .cart-item-img {
+    width: 72px; height: 90px;
+    object-fit: cover;
+    background: var(--sand);
+  }
+  .cart-item-info { flex: 1; }
+  .cart-item-name {
+    font-family: var(--serif);
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .cart-item-price {
+    font-size: 13px;
+    color: var(--earth);
+  }
+  .cart-item-qty {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .qty-btn {
+    width: 24px; height: 24px;
+    border: 1px solid var(--texture);
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .qty-btn:hover { background: var(--sand); }
+  .qty-num { font-size: 13px; min-width: 20px; text-align: center; }
+  .cart-footer {
+    padding-top: 24px;
+    border-top: 1px solid var(--sand-dark);
+  }
+  .cart-subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .cart-subtotal-label { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .cart-subtotal-amount { font-family: var(--serif); font-size: 22px; }
+  .btn-checkout {
+    width: 100%;
+    padding: 16px;
+    background: var(--charcoal);
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+  }
+  .btn-checkout:hover { background: var(--earth); }
+  .cart-shipping-note {
+    font-size: 11px;
+    text-align: center;
+    color: var(--charcoal-light);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    section { padding: 72px 24px; }
+    .hero { padding: 48px 24px; }
+    .collections-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .col-item:first-child { grid-row: auto; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .banner-split { grid-template-columns: 1fr; }
+    .banner-img { height: 300px; }
+    .values-grid { grid-template-columns: 1fr; gap: 40px; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .newsletter { padding: 60px 24px; }
+    footer { padding: 60px 24px 32px; }
+    .cart-drawer { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- GITHUB PAGES NOTICE -->
+<div class="gh-notice">
+  🌐 Esta es la versión demo en GitHub Pages &nbsp;·&nbsp;
+  <a href="https://TUTIENDA.myshopify.com" target="_blank">Ir a la tienda oficial en Shopify →</a>
+</div>
+
+<!-- SHOPIFY FAB -->
+<a href="https://TUTIENDA.myshopify.com" class="shopify-fab" target="_blank">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+  </svg>
+  Comprar ahora
+</a>
+
+<!-- ANNOUNCE BAR -->
+<div class="announce">Envío gratuito en pedidos superiores a 80 € — Descubre nuestras nuevas colecciones</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">MAISON CLARA</a>
+  <ul class="nav-links">
+    <li><a href="#colecciones">Colecciones</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-icons">
+    <button class="nav-icon">Buscar</button>
+    <button class="nav-icon cart-badge" onclick="openCart()">
+      Cesta <span class="cart-count" id="cartCount">2</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0; position:relative; display:flex; align-items:flex-end;">
+  <div class="hero-bg"></div>
+  <div class="hero-content" style="padding:80px">
+    <p class="hero-eyebrow">Más vendidos · Tendencias 2026</p>
+    <h1 class="hero-title">El arte de <em>vivir</em><br>con calma</h1>
+    <p class="hero-sub">Los productos más buscados para transformar tu hogar. Diseño atemporal, entrega rápida desde Europa.</p>
+    <a href="#productos" class="btn-primary">Explorar colección</a>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section class="collections" id="colecciones">
+  <div class="reveal">
+    <p class="section-eyebrow">Categorías</p>
+    <h2 class="section-title">Nuestras <em>colecciones</em></h2>
+    <p class="section-sub">Cada espacio merece ser cuidado. Encuentra el objeto perfecto para cada rincón de tu hogar.</p>
+  </div>
+  <div class="collections-grid reveal">
+    <div class="col-item">
+      <img class="col-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="Sala de estar">
+      <div class="col-overlay">
+        <div class="col-label"><span>Explorar</span>Sala de estar</div>
+      </div>
+    </div>
+    <div class="col-item">
+      <img class="col-img" src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80" alt="Dormitorio">
+      <div class="col-overlay">
+        <div class="col-label"><span>Explorar</span>Dormitorio</div>
+      </div>
+    </div>
+    <div class="col-item">
+      <img class="col-img" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80" alt="Comedor">
+      <div class="col-overlay">
+        <div class="col-label"><span>Explorar</span>Comedor</div>
+      </div>
+    </div>
+    <div class="col-item">
+      <img class="col-img" src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&q=80" alt="Decoración">
+      <div class="col-overlay">
+        <div class="col-label"><span>Explorar</span>Decoración</div>
+      </div>
+    </div>
+    <div class="col-item">
+      <img class="col-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Cocina">
+      <div class="col-overlay">
+        <div class="col-label"><span>Explorar</span>Cocina</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="productos">
+  <div class="products-header reveal">
+    <div>
+      <p class="section-eyebrow">Selección</p>
+      <h2 class="section-title">Más <em>vendidos</em></h2>
+    </div>
+    <a href="#" class="btn-outline">Ver todo</a>
+  </div>
+  <div class="products-grid">
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Tiras LED ambiente">
+        <div class="product-badge sale">🔥 Viral</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Iluminación · Margen ~65%</p>
+      <p class="product-name">Tira LED Ambiente RGB</p>
+      <div class="product-price"><span>34,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~8€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1612690669207-fed642192c40?w=600&q=80" alt="Humidificador aromaterapia">
+        <div class="product-badge">Top ventas</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Bienestar · Margen ~60%</p>
+      <p class="product-name">Humidificador Aromaterapia</p>
+      <div class="product-price"><span>49,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~14€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=600&q=80" alt="Espejo LED redondo">
+        <div class="product-badge sale">🔥 Viral</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Decoración · Margen ~55%</p>
+      <p class="product-name">Espejo LED Retroiluminado</p>
+      <div class="product-price"><span>79,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~22€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&q=80" alt="Organizador modular">
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Organización · Margen ~58%</p>
+      <p class="product-name">Organizador Modular Bambú</p>
+      <div class="product-price"><span>44,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~12€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Velas aromaticas set">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Aromas · Margen ~70%</p>
+      <p class="product-name">Set Velas Soja Aromáticas x4</p>
+      <div class="product-price"><span>38,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~9€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600&q=80" alt="Vinilo pared geometrico">
+        <div class="product-badge sale">🔥 Viral</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Paredes · Margen ~60%</p>
+      <p class="product-name">Vinilos Geométricos Adhesivos</p>
+      <div class="product-price"><span>24,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~6€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" alt="Lampara ratan">
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Iluminación · Margen ~55%</p>
+      <p class="product-name">Lámpara Colgante Ratán</p>
+      <div class="product-price"><span>64,90 €</span><span style="font-size:11px;color:var(--charcoal-light);margin-left:6px">Coste: ~19€</span></div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.unsplash.com/photo-1594046243098-0fceea9d451e?w=600&q=80" alt="Jarrón cerámica">
+        <div class="product-badge sale">−20%</div>
+        <div class="product-actions">
+          <button class="btn-add" onclick="addToCart()">Añadir al carro</button>
+          <button class="btn-wish">♡</button>
+        </div>
+      </div>
+      <p class="product-brand">Cerámica · Margen ~60%</p>
+      <p class="product-name">Jarrón Artesanal Barro</p>
+      <div class="product-price">
+        <span class="price-old">96,00 €</span>
+        <span class="price-new">76,90 €</span>
+        <span style="font-size:11px;color:var(--charcoal-light);margin-left:4px">Coste: ~22€</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <div class="products-note reveal">
+    💡 Los costes indicados son orientativos con proveedor BigBuy o Spocket (almacén EU). Los márgenes reales varían según campañas de publicidad. Valida siempre un producto con un test de 50–100€ en Meta Ads antes de escalarlo.
+  </div>
+</section>
+
+<!-- PROVEEDORES -->
+<section style="background:var(--sand); padding:80px 80px;">
+  <div class="reveal" style="text-align:center; margin-bottom:56px">
+    <p class="section-eyebrow">Proveedores recomendados</p>
+    <h2 class="section-title">Dónde <em>surtirte</em> sin esperas</h2>
+    <p class="section-sub" style="margin: 0 auto; text-align:center">Los 3 mejores proveedores para España y Europa con envíos rápidos y stock real</p>
+  </div>
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px">
+
+    <!-- BigBuy -->
+    <div class="reveal" style="background:var(--white); padding:36px; position:relative; overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--earth)"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px">
+        <p style="font-family:var(--serif); font-size:22px; font-weight:400">BigBuy</p>
+        <span style="background:#FFF0E5; color:var(--earth); font-size:10px; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px;">⭐ Mejor para ES</span>
+      </div>
+      <p style="font-size:12px; color:var(--charcoal-light); margin-bottom:20px;">Mayorista español con +140.000 productos y almacenes en Valencia. Entrega 24–48h en España.</p>
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:24px; font-size:13px;">
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío a España</span>
+          <strong>24–48 h</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío a EU</span>
+          <strong>3–5 días</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Integración Shopify</span>
+          <strong>✅ Sí (API)</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Precio mensual</span>
+          <strong>~69 €/mes</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between;">
+          <span style="color:var(--charcoal-light)">Catálogo hogar</span>
+          <strong>Muy amplio</strong>
+        </div>
+      </div>
+      <p style="font-size:11px; color:var(--charcoal-light); line-height:1.6; margin-bottom:20px;">✅ Perfecto si vendes principalmente en España y sur de Europa. Gestiona impuestos EU automáticamente. Ideal para esta tienda.</p>
+      <a href="https://www.bigbuy.eu/es" target="_blank" class="btn-primary" style="display:block; text-align:center;">Ver BigBuy →</a>
+    </div>
+
+    <!-- Spocket -->
+    <div class="reveal" style="background:var(--white); padding:36px; position:relative; overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#534AB7"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px">
+        <p style="font-family:var(--serif); font-size:22px; font-weight:400">Spocket</p>
+        <span style="background:#EEEDFE; color:#534AB7; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px;">Fácil de usar</span>
+      </div>
+      <p style="font-size:12px; color:var(--charcoal-light); margin-bottom:20px;">Conectado a Shopify nativamente. Proveedores EU y EEUU verificados. Ideal para empezar rápido con buena calidad.</p>
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:24px; font-size:13px;">
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío a España</span>
+          <strong>3–7 días</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío a EU</span>
+          <strong>3–14 días</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Integración Shopify</span>
+          <strong>✅ Nativa (1 clic)</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Precio mensual</span>
+          <strong>~40 €/mes</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between;">
+          <span style="color:var(--charcoal-light)">Prueba gratis</span>
+          <strong>14 días</strong>
+        </div>
+      </div>
+      <p style="font-size:11px; color:var(--charcoal-light); line-height:1.6; margin-bottom:20px;">✅ La opción más sencilla si estás empezando. Puedes pedir muestras antes de publicar y sincroniza el stock automáticamente.</p>
+      <a href="https://www.spocket.co" target="_blank" class="btn-primary" style="display:block; text-align:center; background:#534AB7;">Ver Spocket →</a>
+    </div>
+
+    <!-- AutoDS -->
+    <div class="reveal" style="background:var(--white); padding:36px; position:relative; overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--charcoal)"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px">
+        <p style="font-family:var(--serif); font-size:22px; font-weight:400">AutoDS</p>
+        <span style="background:var(--sand); color:var(--charcoal-light); font-size:10px; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px;">Para escalar</span>
+      </div>
+      <p style="font-size:12px; color:var(--charcoal-light); margin-bottom:20px;">Plataforma todo-en-uno con almacenes propios en EU. Acceso a +500M productos. Automatización total de precios y stock.</p>
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:24px; font-size:13px;">
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío desde EU</span>
+          <strong>5–7 días</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Envío desde Asia</span>
+          <strong>10–20 días</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Integración Shopify</span>
+          <strong>✅ Sí</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--sand-dark); padding-bottom:8px">
+          <span style="color:var(--charcoal-light)">Precio mensual</span>
+          <strong>~27 €/mes</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between;">
+          <span style="color:var(--charcoal-light)">IA para productos</span>
+          <strong>✅ Sí</strong>
+        </div>
+      </div>
+      <p style="font-size:11px; color:var(--charcoal-light); line-height:1.6; margin-bottom:20px;">✅ Mejor opción cuando ya tienes ventas y quieres automatizar todo. Incluye buscador de productos ganadores con IA integrada.</p>
+      <a href="https://www.autods.com" target="_blank" class="btn-primary" style="display:block; text-align:center; background:var(--charcoal);">Ver AutoDS →</a>
+    </div>
+
+  </div>
+  <div style="margin-top:28px; padding:16px 24px; background:rgba(139,111,71,0.08); border-left:3px solid var(--earth); font-size:12px; color:var(--charcoal-light);" class="reveal">
+    <strong style="color:var(--earth);">Estrategia recomendada:</strong> Empieza con <strong>Spocket</strong> para validar productos (más fácil y rápido). Cuando encuentres ganadores, escala con <strong>BigBuy</strong> para el mercado español o <strong>AutoDS</strong> para automatizar y expandirte a Europa.
+  </div>
+</section>
+<div class="banner-split reveal">
+  <img class="banner-img" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80" alt="Artesanía sostenible">
+  <div class="banner-content">
+    <p class="section-eyebrow">Nuestra historia</p>
+    <h2 class="section-title" style="margin-bottom:16px">Hecho con <em>intención</em></h2>
+    <p class="section-sub">Colaboramos con artesanos europeos que trabajan con materiales naturales y técnicas heredadas. Cada pieza tiene historia.</p>
+    <a href="#nosotros" class="btn-primary">Conocer el proceso</a>
+  </div>
+</div>
+
+<!-- VALORES -->
+<section class="values" id="nosotros">
+  <div class="reveal" style="text-align:center; margin-bottom:72px">
+    <p class="section-eyebrow">Por qué elegirnos</p>
+    <h2 class="section-title">Lo que nos <em>define</em></h2>
+  </div>
+  <div class="values-grid">
+    <div class="value-item reveal">
+      <div class="value-num">01</div>
+      <h3 class="value-title">Materiales honestos</h3>
+      <p class="value-text">Trabajamos exclusivamente con madera certificada, lino natural, cerámica artesanal y metales sin recubrimientos tóxicos. Lo que ves es lo que obtienes.</p>
+    </div>
+    <div class="value-item reveal">
+      <div class="value-num">02</div>
+      <h3 class="value-title">Diseño atemporal</h3>
+      <p class="value-text">Apostamos por piezas que no siguen tendencias pasajeras. Un objeto bien diseñado debe poder vivir en tu hogar durante décadas sin envejecer.</p>
+    </div>
+    <div class="value-item reveal">
+      <div class="value-num">03</div>
+      <h3 class="value-title">Envío sin plástico</h3>
+      <p class="value-text">Todos nuestros pedidos se empaquetan con papel reciclado y cartón biodegradable. Compensamos el 100 % de las emisiones de cada envío.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="reveal">
+    <p class="section-eyebrow">Opiniones</p>
+    <h2 class="section-title">Lo que dicen <em>nuestros clientes</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"La lámpara llegó perfectamente embalada y es exactamente como en las fotos. La calidad es excepcional, se nota que está hecha con mimo."</p>
+      <p class="testi-author">— Sofía M., Madrid</p>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Llevo años buscando un jarrón así. Finalmente encontré algo que encaja perfectamente con mi decoración escandinava. Muy recomendable."</p>
+      <p class="testi-author">— Carles V., Barcelona</p>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"El servicio al cliente es increíble. Tuve una duda sobre las medidas y me respondieron en minutos con fotos reales del producto."</p>
+      <p class="testi-author">— Lucía R., Sevilla</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="contacto">
+  <p class="section-eyebrow" style="color:var(--earth-light)">Únete a la comunidad</p>
+  <h2 class="section-title" style="color:white; text-align:center">Inspiración <em>cada semana</em></h2>
+  <p class="section-sub" style="text-align:center">Ideas de decoración, lanzamientos exclusivos y un 10 % de descuento en tu primera compra.</p>
+  <div class="newsletter-form">
+    <input class="newsletter-input" type="email" placeholder="tu@email.com">
+    <button class="newsletter-submit">Suscribirse</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">MAISON CLARA</div>
+      <p class="footer-tagline">Objetos para el hogar que trascienden las tendencias. Diseño europeo, espíritu artesanal.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-heading">Tienda</p>
+      <ul class="footer-links">
+        <li><a href="#">Sala de estar</a></li>
+        <li><a href="#">Dormitorio</a></li>
+        <li><a href="#">Comedor</a></li>
+        <li><a href="#">Cocina</a></li>
+        <li><a href="#">Novedades</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Ayuda</p>
+      <ul class="footer-links">
+        <li><a href="#">Seguimiento de pedido</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Guía de tallas</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Empresa</p>
+      <ul class="footer-links">
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Sostenibilidad</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Afiliados</a></li>
+        <li><a href="#">Aviso legal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Maison Clara. Todos los derechos reservados.</span>
+    <span>Política de privacidad · Cookies · Términos</span>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()">
+  <div class="cart-drawer" onclick="event.stopPropagation()">
+    <div class="cart-header">
+      <h2 class="cart-title">Tu cesta</h2>
+      <button class="cart-close" onclick="closeCart()">×</button>
+    </div>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img class="cart-item-img" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=200&q=80" alt="Lámpara">
+        <div class="cart-item-info">
+          <p class="cart-item-name">Lámpara Arco Rattan</p>
+          <p class="cart-item-price">189,00 €</p>
+          <div class="cart-item-qty">
+            <button class="qty-btn">−</button>
+            <span class="qty-num">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img class="cart-item-img" src="https://images.unsplash.com/photo-1594046243098-0fceea9d451e?w=200&q=80" alt="Jarrón">
+        <div class="cart-item-info">
+          <p class="cart-item-name">Jarrón Artesanal Barro</p>
+          <p class="cart-item-price">96,00 €</p>
+          <div class="cart-item-qty">
+            <button class="qty-btn">−</button>
+            <span class="qty-num">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-amount">285,00 €</span>
+      </div>
+      <button class="btn-checkout">Finalizar compra</button>
+      <p class="cart-shipping-note">Envío gratuito a partir de 80 € · Devolución fácil en 30 días</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Cart
+  function openCart() {
+    document.getElementById('cartOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCart() {
+    document.getElementById('cartOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function addToCart() {
+    const count = document.getElementById('cartCount');
+    count.textContent = parseInt(count.textContent) + 1;
+    openCart();
+  }
+</script>
+</body>
+</html>
